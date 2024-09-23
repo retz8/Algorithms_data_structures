@@ -12,7 +12,8 @@ map은 정렬을 한다.
 #include <unordered_map>
 
 int main() {
-    map<int, string> map; // map<key, value>
+    map<int, string> map; // map<key, value>, descending in default
+    map<int, vector<int>, greater(int)>
 
     map.insert(pair<int, string>(1, "map1"));
     map[1] = "map1";
